@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://yukimagichour-1112.github.io/yukit-wolt-epk/sitemap.xml

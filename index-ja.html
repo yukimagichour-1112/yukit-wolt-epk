@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YUKI.T × WOLT｜プレスキット｜大阪拠点 Psytrance / Techno DJ</title>
+<meta name="description" content="YUKI.T・WOLTの公式プレスキット。大阪拠点のPsytrance / Techno DJ。両名義でBeatport Top 10入りのコンパイルをキュレーション。Magichour Recordingsレーベルマネージャー。">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="canonical" href="https://yukimagichour-1112.github.io/yukit-wolt-epk/index-ja.html">
+<link rel="alternate" hreflang="en" href="https://yukimagichour-1112.github.io/yukit-wolt-epk/">
+<link rel="alternate" hreflang="ja" href="https://yukimagichour-1112.github.io/yukit-wolt-epk/index-ja.html">
+<link rel="alternate" hreflang="x-default" href="https://yukimagichour-1112.github.io/yukit-wolt-epk/">
+<meta property="og:title" content="YUKI.T × WOLT｜プレスキット">
+<meta property="og:description" content="大阪拠点のPsytrance / Techno DJ。両名義でBeatport Top 10入りのコンパイルをキュレーション。">
+<meta property="og:url" content="https://yukimagichour-1112.github.io/yukit-wolt-epk/index-ja.html">
+<meta property="og:image" content="https://yukimagichour-1112.github.io/yukit-wolt-epk/assets/og-epk.jpg">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;family=Noto+Sans+JP:wght@400;500;700&amp;display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0a0d;
+    --bg-raised: #101016;
+    --line: rgba(255, 255, 255, .09);
+    --text: #ececf1;
+    --text-dim: #9b9ba6;
+    --accent: #9d7bff;
+    --accent-dim: rgba(157, 123, 255, .13);
+    --font-display: "Space Grotesk", "Noto Sans JP", sans-serif;
+    --font-body: "Noto Sans JP", sans-serif;
+    --radius: 14px;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.8;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+  ::selection { background: var(--accent); color: #0a0a0d; }
+  img { max-width: 100%; height: auto; display: block; }
+  a { color: inherit; text-decoration: none; }
+  a:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+  .wrap { max-width: 1280px; margin: 0 auto; padding: 0 24px; }
+  .skip-link {
+    position: fixed; top: 8px; left: 12px; z-index: 100;
+    padding: 10px 16px; border-radius: 8px;
+    background: var(--accent); color: #0c0817; font-weight: 700;
+    transform: translateY(-140%);
+  }
+  .skip-link:focus { transform: translateY(0); }
+
+  .grain {
+    position: fixed; inset: 0; z-index: 60; pointer-events: none;
+    opacity: .05;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='0.7'/%3E%3C/svg%3E");
+  }
+
+  .reveal {
+    opacity: 0;
+    transform: translateY(26px);
+    transition: opacity .8s cubic-bezier(.16, 1, .3, 1), transform .8s cubic-bezier(.16, 1, .3, 1);
+    transition-delay: calc(var(--i, 0) * 90ms);
+  }
+  .reveal.in { opacity: 1; transform: none; }
+
+  /* =========== NAV =========== */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 50;
+    height: 64px;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 24px;
+    background: rgba(10, 10, 13, .72);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-bottom: 1px solid var(--line);
+  }
+  .nav-brand {
+    font-family: var(--font-display);
+    font-weight: 700; font-size: 15px; letter-spacing: .14em;
+  }
+  .nav-links { display: flex; align-items: center; gap: 26px; }
+  .nav-links a {
+    font-family: var(--font-display); font-size: 13.5px; font-weight: 500;
+    color: var(--text-dim); letter-spacing: .04em;
+    transition: color .25s;
+  }
+  .nav-links a:hover { color: var(--text); }
+  .nav-links a.btn-primary, .nav-links a.btn-primary:hover { color: #0c0817; }
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center;
+    gap: 8px; white-space: nowrap;
+    font-family: var(--font-body); font-weight: 700; font-size: 14px;
+    padding: 12px 26px; border-radius: 999px;
+    transition: transform .25s cubic-bezier(.16, 1, .3, 1), background .25s, color .25s, border-color .25s;
+  }
+  .btn:active { transform: scale(.98); }
+  .btn-primary { background: var(--accent); color: #0c0817; }
+  .btn-primary:hover { background: #b096ff; transform: translateY(-1px); }
+  .btn-ghost { border: 1px solid rgba(255, 255, 255, .28); color: var(--text); }
+  .btn-ghost:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-1px); }
+  nav .btn { min-height: 44px; padding: 9px 20px; font-size: 13px; }
+  .lang-switch {
+    min-width: 44px; min-height: 44px; padding: 8px 12px;
+    border: 1px solid rgba(255, 255, 255, .28);
+    color: var(--text); background: rgba(10, 10, 13, .55);
+  }
+  .lang-switch:hover { border-color: var(--accent); color: var(--accent); }
+
+  /* =========== HERO =========== */
+  .hero {
+    position: relative;
+    min-height: 100dvh;
+    display: flex; align-items: flex-end;
+    overflow: hidden;
+  }
+  .hero-bg {
+    position: absolute; inset: 0;
+    background-image: url("assets/hero-yukit.jpg");
+    background-size: cover;
+    background-position: 70% 30%;
+  }
+  .hero-bg::after {
+    content: "";
+    position: absolute; inset: 0;
+    background:
+      linear-gradient(to top, rgba(10, 10, 13, .96) 8%, rgba(10, 10, 13, .45) 45%, rgba(10, 10, 13, .25) 100%),
+      linear-gradient(to right, rgba(10, 10, 13, .72), transparent 55%);
+  }
+  .hero-inner {
+    position: relative; z-index: 2;
+    width: 100%; max-width: 1280px; margin: 0 auto;
+    padding: 120px 24px 72px;
+  }
+  .hero-meta {
+    font-family: var(--font-display); font-size: 13px; font-weight: 500;
+    letter-spacing: .18em; text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 20px;
+  }
+  .hero h1 {
+    font-family: var(--font-display);
+    font-size: clamp(3rem, 8.5vw, 6.6rem);
+    font-weight: 700; line-height: .98; letter-spacing: -.02em;
+    margin-bottom: 20px;
+  }
+  .hero-sub {
+    font-size: clamp(15px, 1.6vw, 17.5px);
+    color: var(--text-dim);
+    max-width: 36em;
+    margin-bottom: 36px;
+  }
+  .hero-sub strong { color: var(--text); font-weight: 500; }
+  .hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; }
+  @keyframes rise { from { opacity: 0; transform: translateY(28px); } to { opacity: 1; transform: none; } }
+  .hero-inner > * { animation: rise .9s cubic-bezier(.16, 1, .3, 1) backwards; }
+  .hero-inner > *:nth-child(1) { animation-delay: .05s; }
+  .hero-inner > *:nth-child(2) { animation-delay: .18s; }
+  .hero-inner > *:nth-child(3) { animation-delay: .32s; }
+  .hero-inner > *:nth-child(4) { animation-delay: .46s; }
+  .hero-inner > *:nth-child(5) { animation-delay: .60s; }
+
+  /* ---- hero label affiliation ---- */
+  .hero-affiliation {
+    margin-top: 26px;
+    display: flex; flex-direction: column; align-items: flex-start; gap: 10px;
+  }
+  .affiliation-heading {
+    font-family: var(--font-display); font-size: 10.5px; font-weight: 500;
+    letter-spacing: .22em; text-transform: uppercase;
+    color: var(--text-dim);
+  }
+  .hero-affiliation img { width: 200px; max-width: 56vw; opacity: .88; }
+
+  /* =========== SECTIONS =========== */
+  section { padding: clamp(90px, 11vw, 140px) 0; }
+  .section-head { max-width: 760px; margin-bottom: clamp(40px, 5.5vw, 64px); }
+  .section-head h2 {
+    font-family: var(--font-display);
+    font-size: clamp(1.8rem, 3.8vw, 2.7rem);
+    font-weight: 700; line-height: 1.22; letter-spacing: -.01em;
+  }
+  .section-head p { color: var(--text-dim); margin-top: 14px; max-width: 42em; }
+
+  /* ---- stats ---- */
+  .stats { padding: 0; border-bottom: 1px solid var(--line); }
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .stat {
+    padding: clamp(36px, 4vw, 56px) 28px;
+    border-left: 1px solid var(--line);
+  }
+  .stat:first-child { border-left: 0; }
+  .stat.is-accent { background: radial-gradient(ellipse at 50% 0%, var(--accent-dim), transparent 70%); }
+  .stat-num {
+    font-family: var(--font-display);
+    font-size: clamp(2.2rem, 4.5vw, 3.4rem);
+    font-weight: 700; line-height: 1; letter-spacing: -.02em;
+  }
+  .stat.is-accent .stat-num { color: var(--accent); }
+  .stat-label { margin-top: 12px; font-size: 13.5px; color: var(--text-dim); line-height: 1.6; }
+
+  /* ---- persona split ---- */
+  .persona {
+    display: grid;
+    grid-template-columns: minmax(0, 6fr) minmax(0, 6fr);
+    gap: clamp(36px, 5vw, 80px);
+    align-items: center;
+  }
+  .persona + .persona { margin-top: clamp(90px, 10vw, 130px); }
+  .persona-photo { position: relative; }
+  .persona-photo img {
+    border-radius: var(--radius);
+    border: 1px solid var(--line);
+    width: 100%;
+    box-shadow: 0 30px 80px rgba(60, 30, 140, .22);
+  }
+  .persona-photo figcaption { margin-top: 12px; font-size: 13px; color: var(--text-dim); }
+  .persona-logo { height: 52px; width: auto; margin-bottom: 24px; }
+  .persona-genre {
+    font-family: var(--font-display); font-size: 14px; font-weight: 500;
+    letter-spacing: .06em; color: var(--accent);
+    margin-bottom: 16px;
+  }
+  .persona-bio { color: var(--text-dim); max-width: 36em; }
+  .persona-bio strong { color: var(--text); font-weight: 500; }
+  .persona-bio-jp { margin-top: 14px; font-size: 14px; color: var(--text-dim); }
+  .persona-facts {
+    margin-top: 26px; padding-top: 22px;
+    border-top: 1px solid var(--line);
+    display: flex; flex-wrap: wrap; gap: 10px;
+  }
+  .fact-pill {
+    font-family: var(--font-display); font-size: 12.5px; font-weight: 500;
+    letter-spacing: .04em; color: var(--text);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 7px 16px;
+  }
+  .label-affiliation {
+    margin-top: 24px;
+    display: flex; flex-direction: column; align-items: flex-start; gap: 12px;
+  }
+  .label-affiliation img { opacity: .86; }
+  .label-affiliation.is-patronus img { width: 130px; }
+  .label-affiliation.is-alpaka img { height: 112px; width: auto; }
+
+  /* ---- listen ---- */
+  .listen { background: var(--bg-raised); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .listen-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .listen-main { grid-column: 1 / -1; }
+  .listen iframe {
+    width: 100%; border: 0;
+    border-radius: var(--radius);
+    display: block;
+  }
+  .listen-main iframe { height: 300px; }
+  .listen-grid iframe { height: 166px; }
+  .listen-caption { margin-top: 12px; font-size: 13.5px; color: var(--text-dim); }
+  .listen-title { font-family: var(--font-display); font-weight: 700; font-size: 16px; letter-spacing: .01em; }
+  .listen-desc { margin-top: 6px; margin-bottom: 16px; font-size: 13.5px; color: var(--text-dim); line-height: 1.7; }
+
+  /* ---- curation rail ---- */
+  .rail {
+    display: flex; gap: 18px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 18px;
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent) transparent;
+  }
+  .rail-card {
+    flex: 0 0 300px;
+    scroll-snap-align: start;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    overflow: hidden;
+    background: linear-gradient(165deg, var(--bg-raised), var(--bg) 75%);
+  }
+  .rail-card.is-hit {
+    background:
+      radial-gradient(ellipse at 80% 0%, var(--accent-dim), transparent 60%),
+      linear-gradient(165deg, var(--bg-raised), var(--bg) 75%);
+  }
+  .rail-cover {
+    width: 100%; aspect-ratio: 1; object-fit: cover; display: block;
+    border-bottom: 1px solid var(--line);
+  }
+  .rail-body { padding: 22px 26px 28px; }
+  .rail-year {
+    font-family: var(--font-display);
+    font-size: 2rem; font-weight: 700; letter-spacing: -.02em;
+    color: var(--text-dim);
+  }
+  .rail-card.is-hit .rail-year { color: var(--accent); }
+  .rail-title { margin-top: 14px; font-family: var(--font-display); font-weight: 700; font-size: 17px; line-height: 1.4; }
+  .rail-sub { margin-top: 8px; font-size: 13.5px; color: var(--text-dim); line-height: 1.6; }
+
+  /* ---- live ---- */
+  .live-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: clamp(28px, 4vw, 56px);
+  }
+  .live-col h3 {
+    font-family: var(--font-display);
+    font-size: 17px; font-weight: 700; letter-spacing: .02em;
+    padding-bottom: 14px; margin-bottom: 18px;
+    border-bottom: 1px solid var(--line);
+  }
+  .live-col ul { list-style: none; }
+  .live-col li { padding: 7px 0; color: var(--text-dim); font-size: 14.5px; }
+  .live-col li strong { color: var(--text); font-weight: 500; }
+
+  /* ---- press assets ---- */
+  .kit-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .kit-card {
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: clamp(32px, 4vw, 48px);
+    background: linear-gradient(160deg, var(--bg-raised), var(--bg) 70%);
+    display: flex; flex-direction: column; align-items: flex-start; gap: 20px;
+  }
+  .kit-card img { height: 44px; width: auto; }
+  .kit-card p { color: var(--text-dim); font-size: 14.5px; }
+
+  /* =========== BOOKING =========== */
+  .booking { text-align: center; }
+  .booking h2 {
+    font-family: var(--font-display);
+    font-size: clamp(2.6rem, 7vw, 5rem);
+    font-weight: 700; letter-spacing: -.02em; line-height: 1.05;
+  }
+  .booking p {
+    color: var(--text-dim);
+    max-width: 34em; margin: 20px auto 36px;
+  }
+  .booking-mail {
+    display: block;
+    margin-top: 20px;
+    font-family: var(--font-display); font-size: 15px;
+    color: var(--text-dim);
+  }
+  .booking-mail a { color: var(--accent); }
+  .booking-rider { margin-top: 28px; font-size: 13.5px; color: var(--text-dim); }
+
+  /* =========== FOOTER =========== */
+  footer { border-top: 1px solid var(--line); padding: 56px 0 44px; }
+  .footer-links {
+    display: flex; justify-content: center; gap: 26px; flex-wrap: wrap;
+    font-size: 14px; color: var(--text-dim);
+    margin-bottom: 26px;
+  }
+  .footer-links a { transition: color .25s; }
+  .footer-links a:hover { color: var(--accent); }
+  .footer-note {
+    text-align: center;
+    font-family: var(--font-display);
+    font-size: 13px; letter-spacing: .08em; color: var(--text-dim);
+  }
+
+  /* =========== MOBILE =========== */
+  @media (max-width: 900px) {
+    .nav-links a:not(.btn) { display: none; }
+    .nav-links { gap: 10px; }
+  }
+  @media (max-width: 420px) {
+    nav { padding: 0 12px; }
+    .nav-brand { font-size: 12px; letter-spacing: .08em; }
+    .nav-links { gap: 8px; }
+    nav .btn { padding: 8px 12px; }
+    .kit-card .btn { width: 100%; padding-inline: 16px; white-space: normal; text-align: center; }
+  }
+  @media (max-width: 767px) {
+    .wrap { padding: 0 20px; }
+    .hero-inner { padding: 100px 20px 56px; }
+    .hero-affiliation img { width: 150px; }
+    .stats-grid { grid-template-columns: 1fr 1fr; }
+    .stat { border-left: 0; border-top: 1px solid var(--line); }
+    .stat:nth-child(even) { border-left: 1px solid var(--line); }
+    .stat:nth-child(-n+2) { border-top: 0; }
+    .persona { grid-template-columns: 1fr; gap: 32px; }
+    .persona.is-flip .persona-photo { order: -1; }
+    .listen-grid { grid-template-columns: 1fr; }
+    .live-grid { grid-template-columns: 1fr; }
+    .kit-grid { grid-template-columns: 1fr; }
+    .rail-card { flex-basis: 260px; }
+  }
+
+  /* =========== REDUCED MOTION =========== */
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .hero-inner > * { animation: none; }
+    .reveal { opacity: 1; transform: none; transition: none; }
+  }
+</style>
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">本文へ移動</a>
+<div class="grain" aria-hidden="true"></div>
+
+<nav aria-label="主要ナビゲーション">
+  <div class="nav-brand">YUKI.T × WOLT</div>
+  <div class="nav-links">
+    <a href="#yukit">YUKI.T</a>
+    <a href="#wolt">WOLT</a>
+    <a href="#music">音源</a>
+    <a href="#live">ライブ</a>
+    <a href="#presskit">プレスキット</a>
+    <a class="btn lang-switch" href="./" lang="en" hreflang="en" aria-label="Open the English version" title="English version">EN</a>
+    <a class="btn btn-primary" href="mailto:yukit.magichourrec@gmail.com?subject=Booking%20inquiry%20YUKI.T%20%2F%20WOLT">ブッキング</a>
+  </div>
+</nav>
+
+<main id="main-content">
+<!-- =========== HERO =========== -->
+<header class="hero">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <p class="hero-meta">大阪 · Psytrance / Techno DJ</p>
+    <h1>YUKI.T<br>× WOLT</h1>
+    <p class="hero-sub">ひとりのアーティスト、ふたつの名義。<strong>両名義でBeatport Top 10入りのコンパイルを手がける。</strong>Magichour Recordingsのレーベルマネージャーを務める、大阪拠点のDJ。</p>
+    <div class="hero-ctas">
+      <a class="btn btn-primary" href="mailto:yukit.magichourrec@gmail.com?subject=Booking%20inquiry%20YUKI.T%20%2F%20WOLT">ブッキング</a>
+      <a class="btn btn-ghost" href="#music">試聴する</a>
+    </div>
+    <div class="hero-affiliation" role="group" aria-label="Magichour Recordings レーベルマネージャー">
+      <p class="affiliation-heading" aria-hidden="true">Label Manager of</p>
+      <img src="assets/logo-magichour-horizontal.png" alt="Magichour Recordings" width="3000" height="888">
+    </div>
+  </div>
+</header>
+
+<!-- =========== STATS =========== -->
+<div class="stats" aria-label="Career highlights">
+  <div class="stats-grid">
+    <div class="stat is-accent reveal" style="--i:0">
+      <p class="stat-num">#3</p>
+      <p class="stat-label">Beatport Psytrance Top 100 Releases チャート最高位<br>FIRST IMPACT vol.3 キュレーション（2025）</p>
+    </div>
+    <div class="stat reveal" style="--i:1">
+      <p class="stat-num">#6</p>
+      <p class="stat-label">Beatport Techno（Raw / Deep / Hypnotic）Top 100 Releases チャート最高位<br>Enchanted Tech Journey Vol.2 キュレーション（2026）</p>
+    </div>
+    <div class="stat reveal" style="--i:2">
+      <p class="stat-num">6</p>
+      <p class="stat-label">2022年以降にキュレーションしたコンパイル<br>Patronus Records・Magichour Recordings</p>
+    </div>
+    <div class="stat reveal" style="--i:3">
+      <p class="stat-num">60</p>
+      <p class="stat-label">PSY TECH WEDNESDAYS 開催回数<br>大阪で毎週開催した企画（2024〜2025）</p>
+    </div>
+  </div>
+</div>
+
+<!-- =========== PERSONAS =========== -->
+<section id="yukit">
+  <div class="wrap">
+    <article class="persona">
+      <div class="persona-copy reveal">
+        <img class="persona-logo" src="assets/logo-yukit.png" alt="YUKI.T logo">
+        <p class="persona-genre">Psytrance · Night Psytrance / Night Full On / Twilight</p>
+        <p class="persona-bio">大阪を拠点とするPsytrance DJ。<strong>Patronus Records（スイス）のレーベルDJ</strong>であり、Magichour Recordingsのレーベルマネージャー。キックとベースの緩急、フロアを読んだ展開を軸にしたダイナミックなミックスで、セット全体をひとつの物語として組み立てる。FIRST IMPACTコンピレーションシリーズのキュレーターも務める。</p>
+        <p class="persona-bio-jp">Night Full On、Twilightを主軸に、ピークからブレイクまで温度を落とさない。</p>
+        <div class="label-affiliation is-patronus" role="group" aria-label="Patronus Records所属レーベルDJ">
+          <p class="affiliation-heading" aria-hidden="true">Label DJ for</p>
+          <img src="assets/logo-patronus-white.png" alt="Patronus Records" width="360" height="229" loading="lazy">
+        </div>
+        <div class="persona-facts">
+          <span class="fact-pill">MO:DEM Festival 2024 / 2025</span>
+          <span class="fact-pill">FIRST IMPACT キュレーター</span>
+        </div>
+      </div>
+      <figure class="persona-photo reveal" style="--i:1">
+        <img src="assets/photo-yukit.jpg" width="1200" height="800" alt="YUKI.T playing an outdoor festival stage" loading="lazy">
+        <figcaption>YUKI.T、野外ステージ、日本</figcaption>
+      </figure>
+    </article>
+
+    <article class="persona is-flip" id="wolt">
+      <figure class="persona-photo reveal">
+        <img src="assets/WOLT_Photo_web.webp" width="2280" height="1704" alt="WOLT behind the decks under ultraviolet light" loading="lazy">
+        <figcaption>WOLT、クラブセット、大阪</figcaption>
+      </figure>
+      <div class="persona-copy reveal" style="--i:1">
+        <img class="persona-logo" src="assets/logo-wolt.png" alt="WOLT logo">
+        <p class="persona-genre">Techno / Psytech / Dark Minimal / Psytechno</p>
+        <p class="persona-bio">Techno / Psytechを軸にしたもうひとつの名義。<strong>AlpaKa MuziK（カナダ）のレーベルDJ</strong>であり、大阪の毎週開催Technoパーティー RHYTHM SHIFTのレジデント、そしてEnchanted Tech Journeyシリーズのキュレーター。催眠的で深く、サイケデリックなグルーヴ。硬質なTechnoと高揚感の間を行き来しながらロングナイトを組み立てる。</p>
+        <p class="persona-bio-jp">Dark MinimalからPsytechnoまで、うねるグルーヴで夜の深い時間を担う。</p>
+        <div class="label-affiliation is-alpaka" role="group" aria-label="AlpaKa MuziK所属レーベルDJ">
+          <p class="affiliation-heading" aria-hidden="true">Label DJ for</p>
+          <img src="assets/logo-alpaka-white-trimmed.png" alt="AlpaKa MuziK" width="567" height="1045" loading="lazy">
+        </div>
+        <div class="persona-facts">
+          <span class="fact-pill">RHYTHM SHIFT レジデント</span>
+          <span class="fact-pill">Enchanted Tech Journey キュレーター</span>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- =========== MUSIC =========== -->
+<section class="listen" id="music">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>試聴</h2>
+      <p>YUKI.TとWOLT、それぞれを代表するDJ Mix。</p>
+    </div>
+    <div class="listen-grid">
+      <div class="reveal" style="--i:1">
+        <p class="listen-title">YUKI.T | MO:DEM Festival, THE HIVE</p>
+        <p class="listen-desc">MO:DEM Festival 2025 THE HIVEでのDJセット。</p>
+        <iframe title="YUKI.T on SoundCloud" loading="lazy" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A%2F%2Fsoundcloud.com%2Fmo_dem%2Fyuki-t-the-hive-modem-festival%3Fin%3Dyuki_t%2Fsets%2Fmix_playlist&amp;color=%239d7bff&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_teaser=false"></iframe>
+        <p class="listen-caption">YUKI.T on SoundCloud</p>
+      </div>
+      <div class="reveal" style="--i:2">
+        <p class="listen-title">WOLT | AlpaKast 075</p>
+        <p class="listen-desc">AlpaKa MuziKによるWOLTのアーティスト紹介Mix。</p>
+        <iframe title="WOLT on SoundCloud" loading="lazy" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A%2F%2Fsoundcloud.com%2Falpakamuzik%2Falpakast075-wolt-jp%3Fin%3Dwolt-magichour-recordings%2Fsets%2Fdj-set&amp;color=%239d7bff&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_teaser=false"></iframe>
+        <p class="listen-caption">WOLT on SoundCloud</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========== CURATION =========== -->
+<section>
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>6作のコンパイルをキュレーション。</h2>
+      <p>2つのレーベルにまたがる選曲・曲順・アーティストディレクション。うち2作はBeatport Top 10入り。</p>
+    </div>
+    <div class="rail reveal">
+      <div class="rail-card">
+        <img class="rail-cover" src="assets/cover-tmh.jpg" width="640" height="640" alt="The Magic Hour cover artwork" loading="lazy">
+        <div class="rail-body">
+          <p class="rail-year">2022</p>
+          <p class="rail-title">The Magic Hour</p>
+          <p class="rail-sub">Patronus Records · 全16曲<br>初のキュレーション作品（YUKI.T名義）</p>
+        </div>
+      </div>
+      <div class="rail-card">
+        <img class="rail-cover" src="assets/cover-fi1.jpg" width="640" height="640" alt="FIRST IMPACT Vol.1 cover artwork" loading="lazy">
+        <div class="rail-body">
+          <p class="rail-year">2023</p>
+          <p class="rail-title">FIRST IMPACT Vol.1</p>
+          <p class="rail-sub">Patronus Records · 全12曲<br>YUKI.T名義</p>
+        </div>
+      </div>
+      <div class="rail-card">
+        <img class="rail-cover" src="assets/cover-etj1.jpg" width="640" height="640" alt="Enchanted Tech Journey Vol.1 cover artwork" loading="lazy">
+        <div class="rail-body">
+          <p class="rail-year">2024</p>
+          <p class="rail-title">Enchanted Tech Journey Vol.1</p>
+          <p class="rail-sub">Magichour Recordings デビューリリース<br>WOLT名義</p>
+        </div>
+      </div>
+      <div class="rail-card">
+        <img class="rail-cover" src="assets/cover-fi2.jpg" width="640" height="640" alt="FIRST IMPACT Vol.2 cover artwork" loading="lazy">
+        <div class="rail-body">
+          <p class="rail-year">2025</p>
+          <p class="rail-title">FIRST IMPACT Vol.2</p>
+          <p class="rail-sub">Magichour × Patronus Records<br>YUKI.T名義</p>
+        </div>
+      </div>
+      <div class="rail-card is-hit">
+        <img class="rail-cover" src="assets/cover-fi3.jpg" width="640" height="640" alt="FIRST IMPACT vol.3 cover artwork" loading="lazy">
+        <div class="rail-body">
+          <p class="rail-year">2025</p>
+          <p class="rail-title">FIRST IMPACT vol.3</p>
+          <p class="rail-sub">Magichour Recordings<br>Beatport Psytrance Top 100 最高3位</p>
+        </div>
+      </div>
+      <div class="rail-card is-hit">
+        <img class="rail-cover" src="assets/cover-etj2.jpg" width="640" height="640" alt="Enchanted Tech Journey Vol.2 cover artwork" loading="lazy">
+        <div class="rail-body">
+          <p class="rail-year">2026</p>
+          <p class="rail-title">Enchanted Tech Journey Vol.2</p>
+          <p class="rail-sub">Magichour Recordings<br>Beatport Techno (R/D/H) Top 100 最高6位</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========== LIVE =========== -->
+<section id="live" style="padding-top: 0;">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>ライブ</h2>
+    </div>
+    <div class="live-grid">
+      <div class="live-col reveal" style="--i:0">
+        <h3>海外</h3>
+        <ul>
+          <li><strong>MO:DEM Festival, THE HIVE</strong><br>クロアチア 2025</li>
+          <li><strong>MO:DEM South Africa</strong><br>2024</li>
+          <li><strong>ヨーロッパツアー 2024</strong><br>スイス・スペイン・ポルトガル</li>
+        </ul>
+      </div>
+      <div class="live-col reveal" style="--i:1">
+        <h3>大阪</h3>
+        <ul>
+          <li><strong>RHYTHM SHIFT</strong><br>毎週開催のTechnoパーティー。WOLT名義で主催兼レジデント</li>
+          <li><strong>LONG FORM</strong><br>5時間ロングセット企画。両名義でBack to Back</li>
+          <li><strong>PSY TECH WEDNESDAYS</strong><br>全60回、2024〜2025</li>
+        </ul>
+      </div>
+      <div class="live-col reveal" style="--i:2">
+        <h3>フェス制作</h3>
+        <ul>
+          <li><strong>GAIA Festival 2026</strong><br>ステージマネジメント統括</li>
+          <li><strong>GAIA Festival 2025</strong><br>ステージマネジメントチーム</li>
+          <li>アーティストとしても制作スタッフとしても、ブースの両側で動ける。</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========== PRESS KIT =========== -->
+<section id="presskit" style="padding-top: 0;">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>プレス素材</h2>
+      <p>両名義の高解像度写真、透過ロゴ、バイオを用意。Google Driveで常に最新版を公開。</p>
+    </div>
+    <div class="kit-grid">
+      <div class="kit-card reveal" style="--i:0">
+        <img src="assets/logo-yukit.png" alt="YUKI.T logo">
+        <p>Psytrance名義（YUKI.T）のプレス写真・透過ロゴセット・バイオ。</p>
+        <a class="btn btn-ghost" href="https://drive.google.com/drive/folders/19dCMXq6Wt7kDbNYOg9AuS4HJr9VxEYZ3" target="_blank" rel="noopener noreferrer">YUKI.Tのプレスキットを開く</a>
+      </div>
+      <div class="kit-card reveal" style="--i:1">
+        <img src="assets/logo-wolt.png" alt="WOLT logo">
+        <p>Techno名義（WOLT）のプレス写真・透過ロゴセット・バイオ。</p>
+        <a class="btn btn-ghost" href="https://drive.google.com/drive/folders/1YA1HWwAey3cXBGT5UwU1rKdO1JU_mgo1" target="_blank" rel="noopener noreferrer">WOLTのプレスキットを開く</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========== BOOKING =========== -->
+<section class="booking" id="booking" style="padding-top: 0;">
+  <div class="wrap">
+    <div class="reveal">
+      <h2>一夜を、<br>あるいは5時間を。</h2>
+      <p>YUKI.Tとして、WOLTとして、あるいは両名義のロングセット（YUKI.T b2b WOLT）として。大阪（日本）を拠点に、世界中のクラブ・フェスへ。ブッキングを受付中。</p>
+      <a class="btn btn-primary" href="mailto:yukit.magichourrec@gmail.com?subject=Booking%20inquiry%20YUKI.T%20%2F%20WOLT">ブッキング</a>
+      <span class="booking-mail"><a href="mailto:yukit.magichourrec@gmail.com">yukit.magichourrec@gmail.com</a></span>
+      <p class="booking-rider">推奨機材：Pioneer DJ CDJ-3000 ×2台以上、DJM-A9。詳細なテックライダーは別途お問い合わせください。</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- =========== FOOTER =========== -->
+<footer>
+  <div class="wrap">
+    <div class="footer-links">
+      <a href="https://www.instagram.com/yuki.t_magichour/" target="_blank" rel="noopener noreferrer">Instagram: YUKI.T</a>
+      <a href="https://www.instagram.com/wolt_alpaka_magichour/" target="_blank" rel="noopener noreferrer">Instagram: WOLT</a>
+      <a href="https://www.instagram.com/magichour_recordings/" target="_blank" rel="noopener noreferrer">Instagram: Magichour Recordings</a>
+      <a href="https://soundcloud.com/wolt-magichour-recordings" target="_blank" rel="noopener noreferrer">SoundCloud</a>
+      <a href="https://magichourrecordings1.bandcamp.com/" target="_blank" rel="noopener noreferrer">Bandcamp</a>
+      <a href="https://linktr.ee/yuki.t_wolt" target="_blank" rel="noopener noreferrer">Linktree</a>
+    </div>
+    <p class="footer-note">YUKI.T × WOLT · 大阪 · Magichour Recordings</p>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    var targets = document.querySelectorAll(".reveal");
+    if (reduce || !("IntersectionObserver" in window)) {
+      targets.forEach(function (el) { el.classList.add("in"); });
+      return;
+    }
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("in");
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.2, rootMargin: "0px 0px -5% 0px" });
+    targets.forEach(function (el) { io.observe(el); });
+  })();
+</script>
+
+</body>
+</html>
