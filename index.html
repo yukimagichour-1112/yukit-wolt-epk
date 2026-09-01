@@ -308,6 +308,16 @@
   .rail-card.is-hit .rail-year { color: var(--accent); }
   .rail-title { margin-top: 14px; font-family: var(--font-display); font-weight: 700; font-size: 17px; line-height: 1.4; }
   .rail-sub { margin-top: 8px; font-size: 13.5px; color: var(--text-dim); line-height: 1.6; }
+  .rail-links { margin-top: 16px; display: flex; flex-wrap: wrap; gap: 8px; }
+  .rail-links a {
+    display: inline-flex; align-items: center; justify-content: center;
+    min-height: 44px; padding: 0 16px;
+    border: 1px solid rgba(255, 255, 255, .28); border-radius: 999px;
+    font-family: var(--font-body); font-weight: 600; font-size: 12.5px;
+    color: var(--text-dim); white-space: nowrap;
+    transition: border-color .25s, color .25s;
+  }
+  .rail-links a:hover { border-color: var(--accent); color: var(--accent); }
 
   /* ---- live ---- */
   .live-grid {
@@ -324,6 +334,27 @@
   .live-col ul { list-style: none; }
   .live-col li { padding: 7px 0; color: var(--text-dim); font-size: 14.5px; }
   .live-col li strong { color: var(--text); font-weight: 500; }
+
+  /* ---- rhythm shift callout ---- */
+  .shift-callout {
+    margin-top: clamp(32px, 4.5vw, 48px);
+    padding: clamp(26px, 3vw, 34px) clamp(28px, 3.5vw, 40px);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: linear-gradient(160deg, var(--bg-raised), var(--bg) 70%);
+    display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px;
+  }
+  .shift-callout-main { display: flex; align-items: center; gap: 20px; flex: 1 1 auto; min-width: 0; }
+  .shift-callout-logo { height: clamp(72px, 9vw, 140px); width: auto; max-width: 100%; object-fit: contain; flex-shrink: 0; display: block; }
+  .shift-callout-eyebrow {
+    font-family: var(--font-display); font-size: 10.5px; font-weight: 500;
+    letter-spacing: .22em; text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 8px;
+  }
+  .shift-callout-text { max-width: 46em; }
+  .shift-callout-text p { color: var(--text-dim); font-size: 14.5px; }
+  .shift-callout .btn { min-height: 44px; flex-shrink: 0; }
 
   /* ---- press assets ---- */
   .kit-grid {
@@ -402,6 +433,9 @@
     .live-grid { grid-template-columns: 1fr; }
     .kit-grid { grid-template-columns: 1fr; }
     .rail-card { flex-basis: 260px; }
+    .shift-callout { flex-direction: column; align-items: flex-start; }
+    .shift-callout-main { flex-direction: column; align-items: flex-start; }
+    .shift-callout-logo { height: clamp(64px, 22vw, 96px); }
   }
 
   /* =========== REDUCED MOTION =========== */
@@ -552,6 +586,11 @@
           <p class="rail-year">2022</p>
           <p class="rail-title">The Magic Hour</p>
           <p class="rail-sub">Patronus Records · 16 tracks<br>First curated compilation, as YUKI.T</p>
+          <div class="rail-links">
+            <a href="https://patronusrecords.bandcamp.com/album/the-magic-hour" target="_blank" rel="noopener noreferrer">Buy / Download</a>
+            <a href="https://open.spotify.com/album/6g0xEy5mJAwf7e7TvhOk9n" target="_blank" rel="noopener noreferrer">Spotify</a>
+            <a href="https://music.apple.com/jp/album/the-magic-hour-compiled-by-by-dj-yuki-t/1735765924" target="_blank" rel="noopener noreferrer">Apple Music</a>
+          </div>
         </div>
       </div>
       <div class="rail-card">
@@ -560,6 +599,11 @@
           <p class="rail-year">2023</p>
           <p class="rail-title">FIRST IMPACT Vol.1</p>
           <p class="rail-sub">Patronus Records · 12 tracks<br>as YUKI.T</p>
+          <div class="rail-links">
+            <a href="https://patronusrecords.bandcamp.com/album/first-impact" target="_blank" rel="noopener noreferrer">Buy / Download</a>
+            <a href="https://open.spotify.com/album/5bjxs8K05ZwikxhlXPN5so" target="_blank" rel="noopener noreferrer">Spotify</a>
+            <a href="https://music.apple.com/us/album/first-impact-compiled-by-yuki-t/1708035884" target="_blank" rel="noopener noreferrer">Apple Music</a>
+          </div>
         </div>
       </div>
       <div class="rail-card">
@@ -568,6 +612,11 @@
           <p class="rail-year">2024</p>
           <p class="rail-title">Enchanted Tech Journey Vol.1</p>
           <p class="rail-sub">Magichour Recordings debut release<br>as WOLT</p>
+          <div class="rail-links">
+            <a href="https://magichourrecordings1.bandcamp.com/album/enchanted-tech-journey" target="_blank" rel="noopener noreferrer">Buy / Download</a>
+            <a href="https://open.spotify.com/album/3iDE2It9Pi19BOgnTLL5mP" target="_blank" rel="noopener noreferrer">Spotify</a>
+            <a href="https://music.apple.com/jp/album/enchanted-tech-journey/1797713641" target="_blank" rel="noopener noreferrer">Apple Music</a>
+          </div>
         </div>
       </div>
       <div class="rail-card">
@@ -576,6 +625,11 @@
           <p class="rail-year">2025</p>
           <p class="rail-title">FIRST IMPACT Vol.2</p>
           <p class="rail-sub">Magichour × Patronus Records<br>as YUKI.T</p>
+          <div class="rail-links">
+            <a href="https://patronusrecords.bandcamp.com/album/first-impact-vol-2" target="_blank" rel="noopener noreferrer">Buy / Download</a>
+            <a href="https://open.spotify.com/album/2CbRNnBgHqfaC2L29tHZ9M" target="_blank" rel="noopener noreferrer">Spotify</a>
+            <a href="https://music.apple.com/jp/album/first-impact-vol-2/1799034191" target="_blank" rel="noopener noreferrer">Apple Music</a>
+          </div>
         </div>
       </div>
       <div class="rail-card is-hit">
@@ -584,6 +638,11 @@
           <p class="rail-year">2025</p>
           <p class="rail-title">FIRST IMPACT vol.3</p>
           <p class="rail-sub">Magichour Recordings<br>Beatport Psytrance Top 100, peak #3</p>
+          <div class="rail-links">
+            <a href="https://magichourrecordings1.bandcamp.com/album/first-impact-vol-3" target="_blank" rel="noopener noreferrer">Buy / Download</a>
+            <a href="https://open.spotify.com/album/3z4AztadleroRqwLKBIJ5d" target="_blank" rel="noopener noreferrer">Spotify</a>
+            <a href="https://music.apple.com/jp/album/first-impact-vol-3/1849636779" target="_blank" rel="noopener noreferrer">Apple Music</a>
+          </div>
         </div>
       </div>
       <div class="rail-card is-hit">
@@ -592,6 +651,11 @@
           <p class="rail-year">2026</p>
           <p class="rail-title">Enchanted Tech Journey Vol.2</p>
           <p class="rail-sub">Magichour Recordings<br>Beatport Techno (R/D/H) Top 100, peak #6</p>
+          <div class="rail-links">
+            <a href="https://magichourrecordings1.bandcamp.com/album/enchanted-tech-journey-vol-2" target="_blank" rel="noopener noreferrer">Buy / Download</a>
+            <a href="https://open.spotify.com/album/2QGjyKwOTkfdWiDv20rzzc" target="_blank" rel="noopener noreferrer">Spotify</a>
+            <a href="https://music.apple.com/jp/album/enchanted-tech-journey-vol-2/1880683133" target="_blank" rel="noopener noreferrer">Apple Music</a>
+          </div>
         </div>
       </div>
     </div>
@@ -629,6 +693,16 @@
           <li>Comfortable on both sides of the booth: as an artist and as production crew.</li>
         </ul>
       </div>
+    </div>
+    <div class="shift-callout reveal">
+      <div class="shift-callout-main">
+        <img class="shift-callout-logo" src="assets/rhythm-shift-logo.png" alt="" width="35" height="44" loading="lazy">
+        <div class="shift-callout-text">
+          <p class="shift-callout-eyebrow">RHYTHM SHIFT</p>
+          <p>WOLT&rsquo;s Osaka-based Techno party, as organizer and resident.</p>
+        </div>
+      </div>
+      <a class="btn btn-ghost" href="https://rhythm-shift-osaka.pages.dev/" target="_blank" rel="noopener noreferrer">View RHYTHM SHIFT</a>
     </div>
   </div>
 </section>
