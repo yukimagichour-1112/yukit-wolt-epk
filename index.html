@@ -18,9 +18,6 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:locale:alternate" content="ja_JP">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;family=Noto+Sans+JP:wght@400;500;700&amp;display=swap" rel="stylesheet">
 <style>
   :root {
     --bg: #0a0a0d;
@@ -445,43 +442,55 @@
     .reveal { opacity: 1; transform: none; transition: none; }
   }
 </style>
+<link rel="stylesheet" href="prototype.css">
+<meta name="robots" content="noindex, nofollow">
 </head>
 <body>
 
 <a class="skip-link" href="#main-content">Skip to content</a>
-<div class="grain" aria-hidden="true"></div>
 
-<nav aria-label="Primary navigation">
-  <div class="nav-brand">YUKI.T × WOLT</div>
-  <div class="nav-links">
-    <a href="#yukit">YUKI.T</a>
-    <a href="#wolt">WOLT</a>
-    <a href="#music">Music</a>
-    <a href="#live">Live</a>
-    <a href="#presskit">Press Kit</a>
-    <a class="btn lang-switch" href="index-ja.html" lang="ja" hreflang="ja" aria-label="日本語版を開く" title="日本語版">JP</a>
-    <a class="btn btn-primary" href="mailto:yukit.magichourrec@gmail.com?subject=Booking%20inquiry%20YUKI.T%20%2F%20WOLT">Booking</a>
-  </div>
-</nav>
+
+<nav class="epk-nav" aria-label="Primary navigation">
+      <a class="epk-brand" href="#top">YUKI.T <span aria-hidden="true">/</span> WOLT</a>
+      <div class="epk-links"><a href="#music">Listen</a><a href="#yukit">Profiles</a><a href="#live">Live</a><a href="#presskit">Press kit</a></div>
+      <div class="epk-actions"><a class="epk-language" href="index-ja.html" hreflang="ja" aria-label="日本語版を開く">JP</a><a class="epk-book" href="#booking">Booking <span aria-hidden="true">↗</span></a></div>
+    </nav>
 
 <main id="main-content">
 <!-- =========== HERO =========== -->
-<header class="hero">
-  <div class="hero-bg" aria-hidden="true"></div>
-  <div class="hero-inner">
-    <p class="hero-meta">Osaka, Japan · Psytrance / Techno DJ</p>
-    <h1>YUKI.T<br>× WOLT</h1>
-    <p class="hero-sub">One artist, two names. <strong>Beatport Top 10 curator on both.</strong> Label Manager of Magichour Recordings.<br>大阪拠点のDJ・レーベルマネージャー。</p>
-    <div class="hero-ctas">
-      <a class="btn btn-primary" href="mailto:yukit.magichourrec@gmail.com?subject=Booking%20inquiry%20YUKI.T%20%2F%20WOLT">Booking</a>
-      <a class="btn btn-ghost" href="#music">Listen</a>
-    </div>
-    <div class="hero-affiliation" role="group" aria-label="Label Manager of Magichour Recordings">
-      <p class="affiliation-heading" aria-hidden="true">Label Manager of</p>
-      <img src="assets/logo-magichour-horizontal.png" alt="Magichour Recordings" width="3000" height="888">
-    </div>
-  </div>
-</header>
+<header class="editorial-hero" id="top">
+      <div class="hero-copy"><p class="eyebrow">Osaka, Japan / Electronic press kit</p>
+      <h1><span>YUKI.T</span><span class="second-name"><i aria-hidden="true">/</i> WOLT</span></h1>
+      <p class="hero-intro">One artist. Two distinct sounds.</p><p class="hero-location">Osaka, Japan · DJ / Label Manager</p></div>
+      <figure class="hero-image"><picture><source media="(min-width:768px)" srcset="assets/hero-portrait-640.webp 640w, assets/hero-portrait-960.webp 960w" sizes="45vw"><img src="assets/hero-1100.webp" srcset="assets/hero-640.webp 640w, assets/hero-1100.webp 1100w" sizes="(max-width:767px) 100vw, 50vw" alt="YUKI.T / WOLT behind the decks" fetchpriority="high" width="1100" height="733"></picture><figcaption><span>YUKI.T / WOLT</span><span>Behind the decks</span></figcaption></figure>
+      <div class="hero-routes"><a class="alias-route" href="#set-yukit" aria-label="YUKI.T · Listen"><strong>YUKI.T</strong><span>Psytrance</span><b aria-hidden="true">↗</b></a>
+      <a class="alias-route" href="#set-wolt" aria-label="WOLT · Listen"><strong>WOLT</strong><span>Techno / Psytech</span><b aria-hidden="true">↗</b></a>
+      <div class="hero-credit"><p>Label Manager of</p><img src="assets/logo-magichour-lossless.webp" alt="Magichour Recordings" width="3000" height="888"></div></div>
+    </header>
+<section class="featured-sets" id="music" aria-labelledby="sets-title"><div class="wrap">
+      <div class="sets-heading"><div><p class="eyebrow">Selected DJ sets</p><h2 id="sets-title">Selected sets.</h2></div><p>Two names, two directions. Start with the sound that fits your floor.</p></div>
+      <div class="set-grid"><article class="set-card" id="set-yukit" aria-label="YUKI.T">
+      <div class="set-identity"><img class="set-logo" src="assets/logo-yukit.png" alt="YUKI.T" loading="lazy" width="560" height="133"><span class="set-number" aria-hidden="true">01</span></div>
+      <p class="set-genre">Psytrance · Night Full On / Twilight / Full On</p>
+      <p class="set-label">Label DJ · <strong>Patronus Records</strong> (CH)</p>
+      <h3>MoDem Festival 2025</h3><p class="set-context">THE HIVE · Croatia · Live DJ set · <span class="duration">1:59:16</span></p>
+      <p class="set-description">A continuous journey through Night Full On and Twilight, shaped by energy, tension and the dancefloor.</p>
+      <div class="set-actions"><button class="player-load" type="button" hidden aria-controls="player-yukit" aria-expanded="false" data-player="https://w.soundcloud.com/player/?url=https%3A%2F%2Fsoundcloud.com%2Fmo_dem%2Fyuki-t-the-hive-modem-festival%3Fin%3Dyuki_t%2Fsets%2Fmix_playlist&amp;color=%239d7bff&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_teaser=false" data-title="YUKI.T — MoDem Festival 2025" data-loading="Opening SoundCloud…" data-loaded="Close player" data-fallback="Player unavailable? Use the direct SoundCloud link below." data-ready="Press play in the player. If it does not work, open SoundCloud below.">
+        <span class="play-symbol" aria-hidden="true">▶</span><span data-button-text>Load player</span><span class="duration">1:59:16</span>
+      </button><p class="player-note">SoundCloud loads only when you choose to listen.</p><div class="player-slot" id="player-yukit"></div><p class="player-status" role="status"></p>
+      <div class="set-links"><a href="https://soundcloud.com/mo_dem/yuki-t-the-hive-modem-festival" target="_blank" rel="noopener noreferrer" aria-label="YUKI.T — Listen on SoundCloud ↗">Listen on SoundCloud ↗</a><a href="#yukit">Profile & credentials →</a></div></div>
+    </article><article class="set-card" id="set-wolt" aria-label="WOLT">
+      <div class="set-identity"><img class="set-logo" src="assets/logo-wolt.png" alt="WOLT" loading="lazy" width="560" height="158"><span class="set-number" aria-hidden="true">02</span></div>
+      <p class="set-genre">Techno / Psytech / Dark Minimal / Psytechno</p>
+      <p class="set-label">Label DJ · <strong>AlpaKa MuziK</strong> (CA)</p>
+      <h3>AlpaKast 075</h3><p class="set-context">AlpaKa MuziK · Label artist mix · <span class="duration">1:29:13</span></p>
+      <p class="set-description">Deep, hypnotic grooves between Techno and psychedelic tension. Resident of RHYTHM SHIFT, Osaka.</p>
+      <div class="set-actions"><button class="player-load" type="button" hidden aria-controls="player-wolt" aria-expanded="false" data-player="https://w.soundcloud.com/player/?url=https%3A%2F%2Fsoundcloud.com%2Falpakamuzik%2Falpakast075-wolt-jp%3Fin%3Dwolt-magichour-recordings%2Fsets%2Fdj-set&amp;color=%239d7bff&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_teaser=false" data-title="WOLT — AlpaKast 075" data-loading="Opening SoundCloud…" data-loaded="Close player" data-fallback="Player unavailable? Use the direct SoundCloud link below." data-ready="Press play in the player. If it does not work, open SoundCloud below.">
+        <span class="play-symbol" aria-hidden="true">▶</span><span data-button-text>Load player</span><span class="duration">1:29:13</span>
+      </button><p class="player-note">SoundCloud loads only when you choose to listen.</p><div class="player-slot" id="player-wolt"></div><p class="player-status" role="status"></p>
+      <div class="set-links"><a href="https://soundcloud.com/alpakamuzik/alpakast075-wolt-jp" target="_blank" rel="noopener noreferrer" aria-label="WOLT — Listen on SoundCloud ↗">Listen on SoundCloud ↗</a><a href="#wolt">Profile & credentials →</a></div></div>
+    </article></div>
+    </div></section>
 
 <!-- =========== STATS =========== -->
 <div class="stats" aria-label="Career highlights">
@@ -510,13 +519,13 @@
   <div class="wrap">
     <article class="persona">
       <div class="persona-copy reveal">
-        <img class="persona-logo" src="assets/logo-yukit.png" alt="YUKI.T logo">
+        <img class="persona-logo" src="assets/logo-yukit.png" alt="YUKI.T logo" width="560" height="133" loading="lazy">
         <p class="persona-genre">Psytrance · Night Full On / Twilight / Full On</p>
         <p class="persona-bio">YUKI.T is a Psytrance DJ based in Osaka, Japan. Known for a dynamic mixing style built around kick, bassline, energy flow and strong dancefloor control, he shapes each set as one continuous story. <strong>Label DJ for Patronus Records (CH)</strong> and Label Manager of Magichour Recordings. Curator of the FIRST IMPACT compilation series.</p>
         <p class="persona-bio-jp">Night Full On、Twilight、Full Onを軸に、フロアの熱量を途切れさせないダイナミックなセットを展開する。</p>
         <div class="label-affiliation is-patronus" role="group" aria-label="Label DJ for Patronus Records, Switzerland">
           <p class="affiliation-heading" aria-hidden="true">Label DJ for</p>
-          <img src="assets/logo-patronus-white.png" alt="Patronus Records" width="360" height="229" loading="lazy">
+          <img src="assets/logo-patronus-white.png" alt="Patronus Records" loading="lazy" width="360" height="229">
         </div>
         <div class="persona-facts">
           <span class="fact-pill">MO:DEM Festival 2024 / 2025</span>
@@ -524,24 +533,24 @@
         </div>
       </div>
       <figure class="persona-photo reveal" style="--i:1">
-        <img src="assets/photo-yukit.jpg" width="1200" height="800" alt="YUKI.T playing an outdoor festival stage" loading="lazy">
+        <img src="assets/photo-yukit.jpg" alt="YUKI.T playing an outdoor festival stage" loading="lazy" width="1200" height="800">
         <figcaption>YUKI.T, outdoor stage, Japan</figcaption>
       </figure>
     </article>
 
     <article class="persona is-flip" id="wolt">
       <figure class="persona-photo reveal">
-        <img src="assets/WOLT_Photo_web.webp" width="2280" height="1704" alt="WOLT behind the decks under ultraviolet light" loading="lazy">
+        <img src="assets/WOLT_Photo_web.webp" alt="WOLT behind the decks under ultraviolet light" loading="lazy" width="2280" height="1704">
         <figcaption>WOLT, club set, Osaka</figcaption>
       </figure>
       <div class="persona-copy reveal" style="--i:1">
-        <img class="persona-logo" src="assets/logo-wolt.png" alt="WOLT logo">
-        <p class="persona-genre">Techno / Psytech / Dark Minimal</p>
+        <img class="persona-logo" src="assets/logo-wolt.png" alt="WOLT logo" width="560" height="158" loading="lazy">
+        <p class="persona-genre">Techno / Psytech / Dark Minimal / Psytechno</p>
         <p class="persona-bio">WOLT is the Techno and Psytech alias. Hypnotic, deep and psychedelic grooves built for long nights, moving between raw Techno and psychedelic tension. <strong>Label DJ for AlpaKa MuziK (CA)</strong>, resident of RHYTHM SHIFT, a weekly Techno night in Osaka, and curator of the Enchanted Tech Journey series.</p>
         <p class="persona-bio-jp">HypnoticかつDeepなグルーヴで、TechnoとPsychedelicの間を行き来する名義。</p>
         <div class="label-affiliation is-alpaka" role="group" aria-label="Label DJ for AlpaKa MuziK, Canada">
           <p class="affiliation-heading" aria-hidden="true">Label DJ for</p>
-          <img src="assets/logo-alpaka-white-trimmed.png" alt="AlpaKa MuziK" width="567" height="1045" loading="lazy">
+          <img src="assets/logo-alpaka-white-trimmed.png" alt="AlpaKa MuziK" loading="lazy" width="567" height="1045">
         </div>
         <div class="persona-facts">
           <span class="fact-pill">RHYTHM SHIFT weekly resident</span>
@@ -549,26 +558,6 @@
         </div>
       </div>
     </article>
-  </div>
-</section>
-
-<!-- =========== MUSIC =========== -->
-<section class="listen" id="music">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <h2>Listen</h2>
-      <p>Both names, side by side. YUKI.T brings a signature Night Psytrance set recorded live at MO:DEM Festival, THE HIVE. WOLT brings a Techno / Psytech / Dark Minimal mix as an AlpaKa MuziK label artist.</p>
-    </div>
-    <div class="listen-grid">
-      <div class="reveal" style="--i:1">
-        <iframe title="YUKI.T on SoundCloud" loading="lazy" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A%2F%2Fsoundcloud.com%2Fmo_dem%2Fyuki-t-the-hive-modem-festival%3Fin%3Dyuki_t%2Fsets%2Fmix_playlist&amp;color=%239d7bff&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_teaser=false"></iframe>
-        <p class="listen-caption">YUKI.T on SoundCloud</p>
-      </div>
-      <div class="reveal" style="--i:2">
-        <iframe title="WOLT on SoundCloud" loading="lazy" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A%2F%2Fsoundcloud.com%2Falpakamuzik%2Falpakast075-wolt-jp%3Fin%3Dwolt-magichour-recordings%2Fsets%2Fdj-set&amp;color=%239d7bff&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_teaser=false"></iframe>
-        <p class="listen-caption">WOLT on SoundCloud</p>
-      </div>
-    </div>
   </div>
 </section>
 
@@ -581,7 +570,7 @@
     </div>
     <div class="rail reveal">
       <div class="rail-card">
-        <img class="rail-cover" src="assets/cover-tmh.jpg" width="640" height="640" alt="The Magic Hour cover artwork" loading="lazy">
+        <img class="rail-cover" src="assets/cover-tmh.jpg" alt="The Magic Hour cover artwork" loading="lazy" width="640" height="640">
         <div class="rail-body">
           <p class="rail-year">2022</p>
           <p class="rail-title">The Magic Hour</p>
@@ -594,7 +583,7 @@
         </div>
       </div>
       <div class="rail-card">
-        <img class="rail-cover" src="assets/cover-fi1.jpg" width="640" height="640" alt="FIRST IMPACT Vol.1 cover artwork" loading="lazy">
+        <img class="rail-cover" src="assets/cover-fi1.jpg" alt="FIRST IMPACT Vol.1 cover artwork" loading="lazy" width="640" height="640">
         <div class="rail-body">
           <p class="rail-year">2023</p>
           <p class="rail-title">FIRST IMPACT Vol.1</p>
@@ -607,7 +596,7 @@
         </div>
       </div>
       <div class="rail-card">
-        <img class="rail-cover" src="assets/cover-etj1.jpg" width="640" height="640" alt="Enchanted Tech Journey Vol.1 cover artwork" loading="lazy">
+        <img class="rail-cover" src="assets/cover-etj1.jpg" alt="Enchanted Tech Journey Vol.1 cover artwork" loading="lazy" width="640" height="640">
         <div class="rail-body">
           <p class="rail-year">2024</p>
           <p class="rail-title">Enchanted Tech Journey Vol.1</p>
@@ -620,7 +609,7 @@
         </div>
       </div>
       <div class="rail-card">
-        <img class="rail-cover" src="assets/cover-fi2.jpg" width="640" height="640" alt="FIRST IMPACT Vol.2 cover artwork" loading="lazy">
+        <img class="rail-cover" src="assets/cover-fi2.jpg" alt="FIRST IMPACT Vol.2 cover artwork" loading="lazy" width="640" height="640">
         <div class="rail-body">
           <p class="rail-year">2025</p>
           <p class="rail-title">FIRST IMPACT Vol.2</p>
@@ -633,7 +622,7 @@
         </div>
       </div>
       <div class="rail-card is-hit">
-        <img class="rail-cover" src="assets/cover-fi3.jpg" width="640" height="640" alt="FIRST IMPACT vol.3 cover artwork" loading="lazy">
+        <img class="rail-cover" src="assets/cover-fi3.jpg" alt="FIRST IMPACT vol.3 cover artwork" loading="lazy" width="640" height="640">
         <div class="rail-body">
           <p class="rail-year">2025</p>
           <p class="rail-title">FIRST IMPACT vol.3</p>
@@ -646,7 +635,7 @@
         </div>
       </div>
       <div class="rail-card is-hit">
-        <img class="rail-cover" src="assets/cover-etj2.jpg" width="640" height="640" alt="Enchanted Tech Journey Vol.2 cover artwork" loading="lazy">
+        <img class="rail-cover" src="assets/cover-etj2.jpg" alt="Enchanted Tech Journey Vol.2 cover artwork" loading="lazy" width="640" height="640">
         <div class="rail-body">
           <p class="rail-year">2026</p>
           <p class="rail-title">Enchanted Tech Journey Vol.2</p>
@@ -696,7 +685,7 @@
     </div>
     <div class="shift-callout reveal">
       <div class="shift-callout-main">
-        <img class="shift-callout-logo" src="assets/rhythm-shift-logo.png" alt="" width="35" height="44" loading="lazy">
+        <img class="shift-callout-logo" src="assets/rhythm-shift-logo.png" alt="" loading="lazy" width="1080" height="1350">
         <div class="shift-callout-text">
           <p class="shift-callout-eyebrow">RHYTHM SHIFT</p>
           <p>WOLT&rsquo;s Osaka-based Techno party, as organizer and resident.</p>
@@ -707,6 +696,18 @@
   </div>
 </section>
 
+<section class="design-practice" id="design" aria-labelledby="design-title"><div class="wrap">
+      <div class="design-practice-inner">
+        <a class="design-mark" href="https://magichour-design.takeda-y1112.workers.dev/" target="_blank" rel="noopener noreferrer" aria-label="Magichour Design — website (new tab)">
+          <img src="assets/logo-magichour-design.svg" alt="Magichour Design" width="1080" height="1080" loading="lazy">
+        </a>
+        <div class="design-copy"><p class="eyebrow">Visual practice · YUKI.T / WOLT</p>
+          <h2 id="design-title">Magichour Design</h2><p class="design-lead">The visual side of the music.</p>
+          <p class="design-description">The design practice of YUKI.T / WOLT, shaped by DJing and running events. Artist identities, event visuals and release motion for underground music.</p><p class="design-proof">Explore work including the WOLT identity and the visual world of RHYTHM SHIFT.</p>
+          <a class="design-visit" href="https://magichour-design.takeda-y1112.workers.dev/" target="_blank" rel="noopener noreferrer" aria-label="Explore Magichour Design — new tab"><span class="design-visit-label">Explore Magichour Design</span><span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </div></section>
 <!-- =========== PRESS KIT =========== -->
 <section id="presskit" style="padding-top: 0;">
   <div class="wrap">
@@ -716,12 +717,12 @@
     </div>
     <div class="kit-grid">
       <div class="kit-card reveal" style="--i:0">
-        <img src="assets/logo-yukit.png" alt="YUKI.T logo">
+        <img src="assets/logo-yukit.png" alt="YUKI.T logo" width="560" height="133" loading="lazy">
         <p>Press photos, transparent logo set and bio for the Psytrance name.</p>
         <a class="btn btn-ghost" href="https://drive.google.com/drive/folders/19dCMXq6Wt7kDbNYOg9AuS4HJr9VxEYZ3" target="_blank" rel="noopener noreferrer">Open YUKI.T press kit</a>
       </div>
       <div class="kit-card reveal" style="--i:1">
-        <img src="assets/logo-wolt.png" alt="WOLT logo">
+        <img src="assets/logo-wolt.png" alt="WOLT logo" width="560" height="158" loading="lazy">
         <p>Press photos, transparent logo set and bio for the Techno name.</p>
         <a class="btn btn-ghost" href="https://drive.google.com/drive/folders/1YA1HWwAey3cXBGT5UwU1rKdO1JU_mgo1" target="_blank" rel="noopener noreferrer">Open WOLT press kit</a>
       </div>
@@ -758,25 +759,7 @@
   </div>
 </footer>
 
-<script>
-  (function () {
-    var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    var targets = document.querySelectorAll(".reveal");
-    if (reduce || !("IntersectionObserver" in window)) {
-      targets.forEach(function (el) { el.classList.add("in"); });
-      return;
-    }
-    var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("in");
-          io.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.2, rootMargin: "0px 0px -5% 0px" });
-    targets.forEach(function (el) { io.observe(el); });
-  })();
-</script>
+<script src="prototype.js" defer></script>
 
 </body>
 </html>
