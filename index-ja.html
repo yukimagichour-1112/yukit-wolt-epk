@@ -3,6 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 <title>YUKI.T × WOLT｜プレスキット｜大阪拠点 Psytrance / Techno DJ</title>
 <meta name="description" content="YUKI.T・WOLTの公式プレスキット。大阪拠点のPsytrance / Techno DJ。両名義でBeatport Top 10入りのコンパイルをキュレーション。Magichour Recordingsレーベルマネージャー。">
 <meta name="referrer" content="strict-origin-when-cross-origin">
@@ -334,27 +336,6 @@
   .live-col li { padding: 7px 0; color: var(--text-dim); font-size: 14.5px; }
   .live-col li strong { color: var(--text); font-weight: 500; }
 
-  /* ---- rhythm shift callout ---- */
-  .shift-callout {
-    margin-top: clamp(32px, 4.5vw, 48px);
-    padding: clamp(26px, 3vw, 34px) clamp(28px, 3.5vw, 40px);
-    border: 1px solid var(--line);
-    border-radius: var(--radius);
-    background: linear-gradient(160deg, var(--bg-raised), var(--bg) 70%);
-    display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px;
-  }
-  .shift-callout-main { display: flex; align-items: center; gap: 20px; flex: 1 1 auto; min-width: 0; }
-  .shift-callout-logo { height: clamp(72px, 9vw, 140px); width: auto; max-width: 100%; object-fit: contain; flex-shrink: 0; display: block; }
-  .shift-callout-eyebrow {
-    font-family: var(--font-display); font-size: 10.5px; font-weight: 500;
-    letter-spacing: .22em; text-transform: uppercase;
-    color: var(--accent);
-    margin-bottom: 8px;
-  }
-  .shift-callout-text { max-width: 46em; }
-  .shift-callout-text p { color: var(--text-dim); font-size: 14.5px; }
-  .shift-callout .btn { min-height: 44px; flex-shrink: 0; }
-
   /* ---- press assets ---- */
   .kit-grid {
     display: grid;
@@ -390,6 +371,7 @@
   }
   .booking-mail a { color: var(--accent); }
   .booking-rider { margin-top: 28px; font-size: 13.5px; color: var(--text-dim); }
+  .booking-rider a { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; white-space: nowrap; }
 
   /* =========== FOOTER =========== */
   footer { border-top: 1px solid var(--line); padding: 56px 0 44px; }
@@ -400,6 +382,7 @@
   }
   .footer-links a { transition: color .25s; }
   .footer-links a:hover { color: var(--accent); }
+  @media (max-width: 767px) { .footer-links a { display: inline-flex; align-items: center; min-height: 44px; } }
   .footer-note {
     text-align: center;
     font-family: var(--font-display);
@@ -432,9 +415,6 @@
     .live-grid { grid-template-columns: 1fr; }
     .kit-grid { grid-template-columns: 1fr; }
     .rail-card { flex-basis: 260px; }
-    .shift-callout { flex-direction: column; align-items: flex-start; }
-    .shift-callout-main { flex-direction: column; align-items: flex-start; }
-    .shift-callout-logo { height: clamp(64px, 22vw, 96px); }
   }
 
   /* =========== REDUCED MOTION =========== */
@@ -463,11 +443,11 @@
 <header class="editorial-hero" id="top">
       <div class="hero-copy"><p class="eyebrow">Osaka, Japan / Electronic press kit</p>
       <h1><span>YUKI.T</span><span class="second-name"><i aria-hidden="true">/</i> WOLT</span></h1>
-      <p class="hero-intro">ひとりのアーティスト。ふたつの音。</p><p class="hero-location">大阪、日本 · DJ / レーベルマネージャー</p></div>
+      <p class="hero-intro"><span style="white-space: nowrap">ひとりのアーティスト。</span><wbr><span style="white-space: nowrap">ふたつの音。</span></p><p class="hero-location">大阪、日本 · DJ / レーベルマネージャー</p></div>
       <figure class="hero-image"><picture><source media="(min-width:768px)" srcset="assets/hero-portrait-640.webp 640w, assets/hero-portrait-960.webp 960w" sizes="45vw"><img src="assets/hero-1100.webp" srcset="assets/hero-640.webp 640w, assets/hero-1100.webp 1100w" sizes="(max-width:767px) 100vw, 50vw" alt="YUKI.T / WOLT behind the decks" fetchpriority="high" width="1100" height="733"></picture><figcaption><span>YUKI.T / WOLT</span><span>Behind the decks</span></figcaption></figure>
       <div class="hero-routes"><a class="alias-route" href="#set-yukit" aria-label="YUKI.T · 試聴"><strong>YUKI.T</strong><span>Psytrance</span><b aria-hidden="true">↗</b></a>
       <a class="alias-route" href="#set-wolt" aria-label="WOLT · 試聴"><strong>WOLT</strong><span>Techno / Psytech</span><b aria-hidden="true">↗</b></a>
-      <div class="hero-credit"><p>レーベルマネージャー</p><img src="assets/logo-magichour-lossless.webp" alt="Magichour Recordings" width="3000" height="888"></div></div>
+      <div class="hero-credit"><p>レーベルマネージャー</p><img src="assets/logo-magichour-320.webp" alt="Magichour Recordings" width="3000" height="888"></div></div>
     </header>
 <section class="featured-sets" id="music" aria-labelledby="sets-title"><div class="wrap">
       <div class="sets-heading"><div><p class="eyebrow">Selected DJ sets</p><h2 id="sets-title">ふたつの音を聴く。</h2></div><p>フロアに合う音から、それぞれの名義を知る。代表セットを1本ずつ。</p></div>
@@ -475,9 +455,9 @@
       <div class="set-identity"><img class="set-logo" src="assets/logo-yukit.png" alt="YUKI.T" loading="lazy" width="560" height="133"><span class="set-number" aria-hidden="true">01</span></div>
       <p class="set-genre">Psytrance · Night Full On / Twilight / Full On</p>
       <p class="set-label">所属レーベルDJ · <strong>Patronus Records</strong> (CH)</p>
-      <h3>MoDem Festival 2025</h3><p class="set-context">THE HIVE · クロアチア · ライブDJセット · <span class="duration">1:59:16</span></p>
+      <h3>MO:DEM Festival 2025</h3><p class="set-context">THE HIVE · クロアチア · ライブDJセット · <span class="duration">1:59:16</span></p>
       <p class="set-description">Night Full OnとTwilightを軸に、フロアの熱量と緩急でひとつの物語を描くセット。</p>
-      <div class="set-actions"><button class="player-load" type="button" hidden aria-controls="player-yukit" aria-expanded="false" data-player="https://w.soundcloud.com/player/?url=https%3A%2F%2Fsoundcloud.com%2Fmo_dem%2Fyuki-t-the-hive-modem-festival%3Fin%3Dyuki_t%2Fsets%2Fmix_playlist&amp;color=%239d7bff&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_teaser=false" data-title="YUKI.T — MoDem Festival 2025" data-loading="SoundCloudを読み込み中…" data-loaded="プレイヤーを閉じる" data-fallback="読み込めない場合は、下のSoundCloudリンクから直接試聴できます。" data-ready="プレイヤー内の再生を押してください。動かない場合は下のSoundCloudへ。">
+      <div class="set-actions"><button class="player-load" type="button" hidden aria-controls="player-yukit" aria-expanded="false" data-player="https://w.soundcloud.com/player/?url=https%3A%2F%2Fsoundcloud.com%2Fmo_dem%2Fyuki-t-the-hive-modem-festival%3Fin%3Dyuki_t%2Fsets%2Fmix_playlist&amp;color=%239d7bff&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_teaser=false" data-title="YUKI.T — MO:DEM Festival 2025" data-loading="SoundCloudを読み込み中…" data-loaded="プレイヤーを閉じる" data-fallback="読み込めない場合は、下のSoundCloudリンクから直接試聴できます。" data-ready="プレイヤー内の再生を押してください。動かない場合は下のSoundCloudへ。">
         <span class="play-symbol" aria-hidden="true">▶</span><span data-button-text>プレイヤーを開く</span><span class="duration">1:59:16</span>
       </button><p class="player-note">試聴を選ぶまでSoundCloudには接続しません。</p><div class="player-slot" id="player-yukit"></div><p class="player-status" role="status"></p>
       <div class="set-links"><a href="https://soundcloud.com/mo_dem/yuki-t-the-hive-modem-festival" target="_blank" rel="noopener noreferrer" aria-label="YUKI.T — SoundCloudで聴く ↗">SoundCloudで聴く ↗</a><a href="#yukit">プロフィール・実績 →</a></div></div>
@@ -499,7 +479,7 @@
   <div class="stats-grid">
     <div class="stat is-accent reveal" style="--i:0">
       <p class="stat-num">#3</p>
-      <p class="stat-label">Beatport Psytrance Top 100 Releases チャート最高位<br>FIRST IMPACT vol.3 キュレーション（2025）</p>
+      <p class="stat-label">Beatport Psytrance Top 100 Releases チャート最高位<br>FIRST IMPACT Vol.3 キュレーション（2025）</p>
     </div>
     <div class="stat reveal" style="--i:1">
       <p class="stat-num">#6</p>
@@ -542,7 +522,7 @@
 
     <article class="persona is-flip" id="wolt">
       <figure class="persona-photo reveal">
-        <img src="assets/WOLT_Photo_web.webp" alt="WOLT behind the decks under ultraviolet light" loading="lazy" width="2280" height="1704">
+        <img src="assets/WOLT_Photo_web-960.webp" srcset="assets/WOLT_Photo_web-560.webp 560w, assets/WOLT_Photo_web-960.webp 960w, assets/WOLT_Photo_web-1440.webp 1440w" sizes="(max-width: 767px) calc(100vw - 40px), (min-width: 1280px) 584px, calc((100vw - 48px - 5vw) / 2)" alt="WOLT behind the decks under ultraviolet light" loading="lazy" width="2280" height="1704">
         <figcaption>WOLT、クラブセット、大阪</figcaption>
       </figure>
       <div class="persona-copy reveal" style="--i:1">
@@ -552,7 +532,7 @@
         <p class="persona-bio-jp">Dark MinimalからPsytechnoまで、うねるグルーヴで夜の深い時間を担う。</p>
         <div class="label-affiliation is-alpaka" role="group" aria-label="AlpaKa MuziKのオフィシャルDJ・Japanアンバサダー">
           <p class="affiliation-heading" aria-hidden="true">オフィシャルDJ / Japanアンバサダー</p>
-          <img src="assets/logo-alpaka-white-trimmed.png" alt="AlpaKa MuziK" loading="lazy" width="567" height="1045">
+          <img src="assets/logo-alpaka-white-128.webp" alt="AlpaKa MuziK" loading="lazy" width="567" height="1045">
         </div>
         <div class="persona-facts">
           <span class="fact-pill">RHYTHM SHIFT レジデント</span>
@@ -578,9 +558,9 @@
           <p class="rail-title">The Magic Hour</p>
           <p class="rail-sub">Patronus Records · 全16曲<br>初のキュレーション作品（YUKI.T名義）</p>
           <div class="rail-links">
-            <a href="https://patronusrecords.bandcamp.com/album/the-magic-hour" target="_blank" rel="noopener noreferrer">Buy / Download</a>
-            <a href="https://open.spotify.com/album/6g0xEy5mJAwf7e7TvhOk9n" target="_blank" rel="noopener noreferrer">Spotify</a>
-            <a href="https://music.apple.com/jp/album/the-magic-hour-compiled-by-by-dj-yuki-t/1735765924" target="_blank" rel="noopener noreferrer">Apple Music</a>
+            <a href="https://patronusrecords.bandcamp.com/album/the-magic-hour" target="_blank" rel="noopener noreferrer" lang="en" aria-label="Buy / Download The Magic Hour on Bandcamp">Buy / Download</a>
+            <a href="https://open.spotify.com/album/6g0xEy5mJAwf7e7TvhOk9n" target="_blank" rel="noopener noreferrer" lang="en" aria-label="Listen to The Magic Hour on Spotify">Spotify</a>
+            <a href="https://music.apple.com/jp/album/the-magic-hour-compiled-by-by-dj-yuki-t/1735765924" target="_blank" rel="noopener noreferrer" lang="en" aria-label="Listen to The Magic Hour on Apple Music">Apple Music</a>
           </div>
         </div>
       </div>
@@ -591,9 +571,9 @@
           <p class="rail-title">FIRST IMPACT Vol.1</p>
           <p class="rail-sub">Patronus Records · 全12曲<br>YUKI.T名義</p>
           <div class="rail-links">
-            <a href="https://patronusrecords.bandcamp.com/album/first-impact" target="_blank" rel="noopener noreferrer">Buy / Download</a>
-            <a href="https://open.spotify.com/album/5bjxs8K05ZwikxhlXPN5so" target="_blank" rel="noopener noreferrer">Spotify</a>
-            <a href="https://music.apple.com/us/album/first-impact-compiled-by-yuki-t/1708035884" target="_blank" rel="noopener noreferrer">Apple Music</a>
+            <a href="https://patronusrecords.bandcamp.com/album/first-impact" target="_blank" rel="noopener noreferrer" lang="en" aria-label="Buy / Download FIRST IMPACT Vol.1 on Bandcamp">Buy / Download</a>
+            <a href="https://open.spotify.com/album/5bjxs8K05ZwikxhlXPN5so" target="_blank" rel="noopener noreferrer" lang="en" aria-label="Listen to FIRST IMPACT Vol.1 on Spotify">Spotify</a>
+            <a href="https://music.apple.com/us/album/first-impact-compiled-by-yuki-t/1708035884" target="_blank" rel="noopener noreferrer" lang="en" aria-label="Listen to FIRST IMPACT Vol.1 on Apple Music">Apple Music</a>
           </div>
         </div>
       </div>
@@ -604,9 +584,9 @@
           <p class="rail-title">Enchanted Tech Journey Vol.1</p>
           <p class="rail-sub">Magichour Recordings デビューリリース<br>WOLT名義</p>
           <div class="rail-links">
-            <a href="https://magichourrecordings1.bandcamp.com/album/enchanted-tech-journey" target="_blank" rel="noopener noreferrer">Buy / Download</a>
-            <a href="https://open.spotify.com/album/3iDE2It9Pi19BOgnTLL5mP" target="_blank" rel="noopener noreferrer">Spotify</a>
-            <a href="https://music.apple.com/jp/album/enchanted-tech-journey/1797713641" target="_blank" rel="noopener noreferrer">Apple Music</a>
+            <a href="https://magichourrecordings1.bandcamp.com/album/enchanted-tech-journey" target="_blank" rel="noopener noreferrer" lang="en" aria-label="Buy / Download Enchanted Tech Journey Vol.1 on Bandcamp">Buy / Download</a>
+            <a href="https://open.spotify.com/album/3iDE2It9Pi19BOgnTLL5mP" target="_blank" rel="noopener noreferrer" lang="en" aria-label="Listen to Enchanted Tech Journey Vol.1 on Spotify">Spotify</a>
+            <a href="https://music.apple.com/jp/album/enchanted-tech-journey/1797713641" target="_blank" rel="noopener noreferrer" lang="en" aria-label="Listen to Enchanted Tech Journey Vol.1 on Apple Music">Apple Music</a>
           </div>
         </div>
       </div>
@@ -617,22 +597,22 @@
           <p class="rail-title">FIRST IMPACT Vol.2</p>
           <p class="rail-sub">Magichour × Patronus Records<br>YUKI.T名義</p>
           <div class="rail-links">
-            <a href="https://patronusrecords.bandcamp.com/album/first-impact-vol-2" target="_blank" rel="noopener noreferrer">Buy / Download</a>
-            <a href="https://open.spotify.com/album/2CbRNnBgHqfaC2L29tHZ9M" target="_blank" rel="noopener noreferrer">Spotify</a>
-            <a href="https://music.apple.com/jp/album/first-impact-vol-2/1799034191" target="_blank" rel="noopener noreferrer">Apple Music</a>
+            <a href="https://patronusrecords.bandcamp.com/album/first-impact-vol-2" target="_blank" rel="noopener noreferrer" lang="en" aria-label="Buy / Download FIRST IMPACT Vol.2 on Bandcamp">Buy / Download</a>
+            <a href="https://open.spotify.com/album/2CbRNnBgHqfaC2L29tHZ9M" target="_blank" rel="noopener noreferrer" lang="en" aria-label="Listen to FIRST IMPACT Vol.2 on Spotify">Spotify</a>
+            <a href="https://music.apple.com/jp/album/first-impact-vol-2/1799034191" target="_blank" rel="noopener noreferrer" lang="en" aria-label="Listen to FIRST IMPACT Vol.2 on Apple Music">Apple Music</a>
           </div>
         </div>
       </div>
       <div class="rail-card is-hit">
-        <img class="rail-cover" src="assets/cover-fi3.jpg" alt="FIRST IMPACT vol.3 cover artwork" loading="lazy" width="640" height="640">
+        <img class="rail-cover" src="assets/cover-fi3.jpg" alt="FIRST IMPACT Vol.3 cover artwork" loading="lazy" width="640" height="640">
         <div class="rail-body">
           <p class="rail-year">2025</p>
-          <p class="rail-title">FIRST IMPACT vol.3</p>
+          <p class="rail-title">FIRST IMPACT Vol.3</p>
           <p class="rail-sub">Magichour Recordings<br>Beatport Psytrance Top 100 最高3位</p>
           <div class="rail-links">
-            <a href="https://magichourrecordings1.bandcamp.com/album/first-impact-vol-3" target="_blank" rel="noopener noreferrer">Buy / Download</a>
-            <a href="https://open.spotify.com/album/3z4AztadleroRqwLKBIJ5d" target="_blank" rel="noopener noreferrer">Spotify</a>
-            <a href="https://music.apple.com/jp/album/first-impact-vol-3/1849636779" target="_blank" rel="noopener noreferrer">Apple Music</a>
+            <a href="https://magichourrecordings1.bandcamp.com/album/first-impact-vol-3" target="_blank" rel="noopener noreferrer" lang="en" aria-label="Buy / Download FIRST IMPACT Vol.3 on Bandcamp">Buy / Download</a>
+            <a href="https://open.spotify.com/album/3z4AztadleroRqwLKBIJ5d" target="_blank" rel="noopener noreferrer" lang="en" aria-label="Listen to FIRST IMPACT Vol.3 on Spotify">Spotify</a>
+            <a href="https://music.apple.com/jp/album/first-impact-vol-3/1849636779" target="_blank" rel="noopener noreferrer" lang="en" aria-label="Listen to FIRST IMPACT Vol.3 on Apple Music">Apple Music</a>
           </div>
         </div>
       </div>
@@ -643,9 +623,9 @@
           <p class="rail-title">Enchanted Tech Journey Vol.2</p>
           <p class="rail-sub">Magichour Recordings<br>Beatport Techno (R/D/H) Top 100 最高6位</p>
           <div class="rail-links">
-            <a href="https://magichourrecordings1.bandcamp.com/album/enchanted-tech-journey-vol-2" target="_blank" rel="noopener noreferrer">Buy / Download</a>
-            <a href="https://open.spotify.com/album/2QGjyKwOTkfdWiDv20rzzc" target="_blank" rel="noopener noreferrer">Spotify</a>
-            <a href="https://music.apple.com/jp/album/enchanted-tech-journey-vol-2/1880683133" target="_blank" rel="noopener noreferrer">Apple Music</a>
+            <a href="https://magichourrecordings1.bandcamp.com/album/enchanted-tech-journey-vol-2" target="_blank" rel="noopener noreferrer" lang="en" aria-label="Buy / Download Enchanted Tech Journey Vol.2 on Bandcamp">Buy / Download</a>
+            <a href="https://open.spotify.com/album/2QGjyKwOTkfdWiDv20rzzc" target="_blank" rel="noopener noreferrer" lang="en" aria-label="Listen to Enchanted Tech Journey Vol.2 on Spotify">Spotify</a>
+            <a href="https://music.apple.com/jp/album/enchanted-tech-journey-vol-2/1880683133" target="_blank" rel="noopener noreferrer" lang="en" aria-label="Listen to Enchanted Tech Journey Vol.2 on Apple Music">Apple Music</a>
           </div>
         </div>
       </div>
@@ -685,28 +665,31 @@
         </ul>
       </div>
     </div>
-    <div class="shift-callout reveal">
-      <div class="shift-callout-main">
-        <img class="shift-callout-logo" src="assets/rhythm-shift-logo.png" alt="" loading="lazy" width="1080" height="1350">
-        <div class="shift-callout-text">
-          <p class="shift-callout-eyebrow">RHYTHM SHIFT</p>
-          <p>WOLTが主催兼レジデントを務める大阪のTechnoパーティー。</p>
-        </div>
-      </div>
-      <a class="btn btn-ghost" href="https://rhythm-shift-osaka.pages.dev/" target="_blank" rel="noopener noreferrer">RHYTHM SHIFTを見る</a>
-    </div>
+
   </div>
 </section>
 
+<section class="design-practice rhythm-practice" id="rhythm-shift" aria-labelledby="rhythm-shift-title"><div class="wrap">
+      <div class="design-practice-inner">
+        <a class="design-mark rhythm-mark" href="https://rhythm-shift-osaka.pages.dev/" target="_blank" rel="noopener noreferrer" aria-label="RHYTHM SHIFT — 公式サイト（新しいタブ）">
+          <img src="assets/rhythm-shift-logo-512.webp" alt="RHYTHM SHIFT" width="512" height="640" loading="lazy">
+        </a>
+        <div class="design-copy"><p class="eyebrow">EVENT · OSAKA / WOLT</p>
+          <h2 id="rhythm-shift-title">RHYTHM SHIFT</h2><p class="design-lead">WOLTが主催兼レジデントを務める大阪のTechnoパーティー。</p>
+          <a class="design-visit" href="https://rhythm-shift-osaka.pages.dev/" target="_blank" rel="noopener noreferrer" aria-label="RHYTHM SHIFTを見る — 新しいタブ"><span class="design-visit-label">RHYTHM SHIFTを見る</span><span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </div></section>
+
 <section class="design-practice" id="design" aria-labelledby="design-title"><div class="wrap">
       <div class="design-practice-inner">
-        <a class="design-mark" href="https://magichour-design.takeda-y1112.workers.dev/" target="_blank" rel="noopener noreferrer" aria-label="Magichour Design — 公式サイト（新しいタブ）">
+        <a class="design-mark" href="https://magichour-design-2026.pages.dev/" target="_blank" rel="noopener noreferrer" aria-label="Magichour Design — 公式サイト（新しいタブ）">
           <img src="assets/logo-magichour-design.svg" alt="Magichour Design" width="1080" height="1080" loading="lazy">
         </a>
         <div class="design-copy"><p class="eyebrow">Visual practice · YUKI.T / WOLT</p>
           <h2 id="design-title">Magichour Design</h2><p class="design-lead">音楽の世界観を、視覚へ。</p>
           <p class="design-description">YUKI.T / WOLTによる、アンダーグラウンド音楽のためのデザイン活動。DJ・イベント主催で培った感覚を、アーティストロゴ、イベントビジュアル、リリースモーションへつなげています。</p><p class="design-proof">WOLTのロゴ、RHYTHM SHIFTのビジュアルなど、音楽とともに生まれた制作を紹介。</p>
-          <a class="design-visit" href="https://magichour-design.takeda-y1112.workers.dev/" target="_blank" rel="noopener noreferrer" aria-label="Magichour Designの作品を見る — 新しいタブ"><span class="design-visit-label">Magichour Designの作品を見る</span><span aria-hidden="true">↗</span></a>
+          <a class="design-visit" href="https://magichour-design-2026.pages.dev/" target="_blank" rel="noopener noreferrer" aria-label="Magichour Designの作品を見る — 新しいタブ"><span class="design-visit-label">Magichour Designの作品を見る</span><span aria-hidden="true">↗</span></a>
         </div>
       </div>
     </div></section>
@@ -740,7 +723,7 @@
       <p>YUKI.Tとして、WOLTとして、あるいは両名義のロングセット（YUKI.T b2b WOLT）として。大阪（日本）を拠点に、世界中のクラブ・フェスへ。ブッキングを受付中。</p>
       <a class="btn btn-primary" href="mailto:yukit.magichourrec@gmail.com?subject=Booking%20inquiry%20YUKI.T%20%2F%20WOLT">ブッキング</a>
       <span class="booking-mail"><a href="mailto:yukit.magichourrec@gmail.com">yukit.magichourrec@gmail.com</a></span>
-      <p class="booking-rider">推奨機材：Pioneer DJ CDJ-3000 ×2台以上、DJM-A9。詳細なテックライダーは別途お問い合わせください。</p>
+      <p class="booking-rider">推奨機材：Pioneer DJ CDJ-3000 ×2台以上、DJM-A9。<a href="https://drive.google.com/file/d/1v13gvBV4OplAFc9QI2pSCtie3MJVAzie/view" target="_blank" rel="noopener noreferrer" aria-label="テックライダーを見る（PDF）（新しいタブで開きます）">テックライダーを見る（PDF） <span aria-hidden="true">↗</span></a></p>
     </div>
   </div>
 </section>
